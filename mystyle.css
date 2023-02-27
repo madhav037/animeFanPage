@@ -1,0 +1,1565 @@
+:root{
+  --main-color: #ffc107;
+  --light-blue: black;
+  --light-white:rgba(255,255,255,.5);
+  --light-black: rgba(0,0,0,.3);
+  --light-bg:rgba(255,255,255,.1);
+}
+html
+{
+  scroll-behavior: smooth;
+}
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;  border: none;
+}
+body{
+  background-color: rgb(255, 255, 255);
+}
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem 0px;
+}
+/* header starts */
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;  
+  background: linear-gradient(0deg,transparent,rgb(48, 46, 46));
+}
+.header .flex{
+  padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .flex .logo{
+    width: 180px;
+    height: 180px;
+}
+
+.header .flex .navbar a{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:white;
+    margin: 0px 25px 0px 25px;
+    transition: .2s linear;
+}
+
+.header .flex .navbar a:hover{
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+.header .flex  span .images{
+    width: 60px;
+    height: 60px;
+    border-radius: 6rem;
+}
+.header .flex  span h3{
+    font-size: 2rem;
+    color: white;
+    align-items: end;
+}
+/* header ends */
+
+/* slideshow starts */
+.slidecontainer{
+    position: relative;
+}
+.slidecontainer .slides img
+{
+  width: 100%;
+  height: 755px;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* slideshow ends */
+
+.anime_page1{
+	height: 800px;
+	background-image: url('./images/aotback.png');
+	-webkit-mask-image: linear-gradient(0deg,  transparent,rgb(255, 255, 255) 50%);
+	mask-image: linear-gradient(0deg,  transparent,rgb(255, 255, 255));
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: absolute;
+	opacity: 1;
+	padding: 20px;
+}
+.navigation	
+{
+	z-index: 9999;
+	box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+}
+
+.navigation .navigation-bar{
+	font-size: 1.2rem;
+  text-align: center;
+	transition: 0.2s ease;
+	margin-top: -1.8rem;
+}
+.navigation .navigation-bar a{
+	text-decoration: none;
+	padding: 6px;
+	margin :2rem;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	transition: 0.5s;
+  	font-weight: bold;
+}
+
+.navigation .navigation-bar a:hover{
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.navigation .user
+{
+	float: right;
+	margin: -35px 40px 0 0;
+  
+}
+.description
+{
+	position: relative;
+	color: rgb(66, 56, 56);
+	height: 400px;
+	width: 480px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 14px;
+	top: 175px;
+}
+.description p::first-letter
+{
+	font-size: xx-large;
+}
+.description p{
+	padding-top: 30px;
+	font-size: 20px;
+	word-spacing: 2px;
+	line-height: 27px;
+	text-align: justify;
+}
+.description button
+{
+	font-size: 23px;
+	background-color: red;
+	color: white;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 13px;
+}
+.description button:hover
+{
+	background-color: #e2e4e6;
+	color: red;
+	transition: 0.3s;
+}
+#ratio
+{
+	display: none;
+	aspect-ratio: 16/9;
+}
+.anime_page2{
+	height: 600px;
+	width: 100%;
+}
+
+/* side-bar starts */
+.sidenavbar{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:black;
+	overflow-x: hidden;
+	transition: .5s;
+	padding-top: 5rem;
+	opacity: .7;
+        }
+        
+        .sidenavbar a{
+	padding: 15px 15px 15px 50px;
+	text-decoration: none;
+	color: rgb(97, 96, 96);
+	display: block;
+	transition: .3s;
+	font-size: 2rem;
+	opacity: 1;
+        }
+        .sidenavbar a:hover{
+	color: white;
+        }
+        .sidenavbar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 3.5rem;
+          margin: 5px;
+          color: white;
+        }
+        #sidenav{
+	transition: margin-left 0.5s;
+            padding: 16px;
+        }
+ /* side-bar ends */
+/* anime Page 1 END */
+/* MANGA STYLE  START*/
+.manga{
+	height: 450px;
+	width: 100%;
+	margin: 2px;
+	padding: 3px;
+	position: relative;
+}
+.manga h1 span
+{
+	background-color: rgb(100, 149, 237);
+	color: white;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+.manga .manga_books
+{
+
+	margin-top: 20px;
+	height: 90%;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.manga_books a{
+	position: relative;
+	text-align: center;
+}
+.manga_books a img
+{
+	position: relative;
+	display: inline-block;
+	height: 83%;
+	object-fit: cover;
+	outline: none;
+	border-radius: 23px;
+	width: 25%;
+	box-shadow: 10px 10px 5px lightblue;
+	margin: 10px;
+}
+.centered{
+	margin-left:17%;
+	margin-top: 1.5%;
+	font-size: 25px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	display: none;
+}
+.manga_books a img:hover + .centered
+{
+	display: inline;
+}
+.manga_books a img:hover
+{
+	opacity: 0.7;
+	transition: 0.6s;
+}
+/* MANGA STYLE  END*/
+
+/* THEORIES AND ARTICLES START */
+a{
+	text-decoration: none;
+	color: black;
+}
+.theories_and_articles
+{
+	background-color: #f5f5f4;
+	margin: 2px;
+	padding: 13px;
+	height: auto;
+	width: 100%;
+}
+.theories_and_articles h1{
+	margin-top: 50px;
+}
+.theories_and_articles h1 span
+{
+	padding: 10px;
+	background-color: rgb(100, 149, 237);
+	color: white;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+.theories_and_articles h1 span:hover
+{
+	filter: brightness(1.2);
+}
+.theories_and_articles .blockOfArticle
+{
+	margin:2% 2px;
+	padding: 4px;
+	height: 250px;
+	width: 100%;
+}
+.theories_and_articles .blockOfArticle img
+{
+	border-radius: 20px;
+	float: left;
+	object-fit: cover;
+	height: 242px;
+	width: 30%;
+}
+.theories_and_articles .blockOfArticle img:hover
+{
+	opacity: 0.9;
+	transform: 0.8s;
+	border: 5px solid rgba(255, 255, 255, 0.5);
+	transition: 0.4s;
+}
+.theories_and_articles .blockOfArticle .write::first-letter
+{
+	font-size: 35px;
+}
+.theories_and_articles .blockOfArticle .write
+{
+	border-radius: 20px;
+	width: 69%;
+	height: 100%;
+	float: left;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #e2e4e6;
+	color: rgb(53, 51, 51);
+	line-height: 30px;
+	font-size: 22px;
+	margin: 5px;
+	padding: 10px 20px 5px 20px;
+}
+.theories_and_articles .blockOfArticle .write:hover
+{
+	background-color: #bfc0c1;
+}
+.theories_and_articles .blockOfArticle .write span{
+	font-size: 20px;
+	color: blue;
+}
+/* THEORIES AND ARTICLES END */
+/* Naruto starts */
+.narutobody{
+  background: url(https://images4.alphacoders.com/752/752143.png) no-repeat;
+  background-size: contain;
+  background-color:rgb(251,148,39);
+}
+.shurikennavbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 5rem;
+    opacity: 1;
+}
+#shurikenrotate{
+  height: 50px;
+  width: 50px;
+}
+.shurikennavbar a{
+    padding: 15px 15px 15px 50px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: .3s;
+    font-size: 2rem;
+    opacity: 1;
+}
+.shurikennavbar a:hover{
+    color: rgb(251,148,39);
+}
+.shurikennavbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3.5rem;
+  margin: 5px;
+  color: black;
+}
+#shurikennav{
+    transition: margin-left .5s;
+  padding: 16px;
+}
+/* @keyframes hemang {
+    from{
+      color: black;
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+      color: black;
+    }
+} */
+
+.narutomain{
+  margin-top: 55rem;
+  /* background-color: rgb(251,148,39); */
+  
+}
+
+
+.narutomain .heading{
+  text-align: center;
+  color: black;
+  font-size: 5rem;
+}
+
+.narutomain .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,30rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  
+}
+
+.narutomain .grid .box{
+ 
+  padding: 2rem;
+  backdrop-filter: blur(.4rem);
+  border-radius: .5rem;
+  position: relative;
+  width: 55%;
+  margin-left: 7rem;
+}
+
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: orangered;
+  overflow: hidden;
+  width: 0;
+  height: 20%;
+  transition: 1s ease;;
+  border-radius: .5rem;
+  margin-bottom: 5rem;
+}
+.box:hover .overlay{
+    width: 120%;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.narutomain .grid .box .image{
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+
+}
+
+.narutomain .grid .box .name {
+
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+/* timeline starts */
+body .bigparallax{
+  height: 100vh;
+}
+.parallax{
+  background-image: url('https://i.pinimg.com/originals/fc/43/a7/fc43a71e0201f8d0ff117a8c88a934c2.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 1 */
+.parallax1{
+  background-image: url('https://narutokai.gitlab.io/images/arcs/arc-landofwaves.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 2 */
+.parallax2{
+  background-image: url('https://qph.cf2.quoracdn.net/main-qimg-44abec06dbc8f779b3088743a732beca-lq ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 3 */
+.parallax3{
+  background-image: url('https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/images/naruto01/001%EF%BD%9E100/068/C034.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 4 */
+.parallax4{
+  background-image: url('https://cdn.firstcuriosity.com/wp-content/uploads/2023/01/01235721/Adobe_Express_20230101_2308350_1-1-1024x576.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 5 */
+.parallax5{
+  background-image: url(' https://imgix.ranker.com/list_img_v2/5405/2905405/original/2905405 ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 6 */
+.parallax6{
+  background-image: url('https://preview.redd.it/39sz10hvwko61.jpg?auto=webp&s=9d85cedf7a786a707706ebeb689de792680d5689 ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 7 */
+.parallax7{
+  background-image: url('https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/images/naruto02/301%EF%BD%9E400/340/C113.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 8 */
+.parallax8{
+  background-image: url('https://64.media.tumblr.com/05e6e035732aefe1f4e7b9201a8d3007/48c52591763818fd-92/s500x750/c301ec2ffff8efa309f0f2580222369226a383d6.png ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 9*/
+.parallax9{
+  background-image: url('https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/images/naruto02/221%EF%BD%9E300/262/C154_0103.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 10 */
+.parallax10{
+  background-image: url('https://i.ytimg.com/vi/URMd6IA0RTw/maxresdefault.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 11 */
+.parallax11{
+  background-image: url('https://i.ytimg.com/vi/HzQZEgi1BSo/maxresdefault.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 12 */
+.parallax12{
+  background-image: url('https://dailyanimeart.files.wordpress.com/2012/09/deidara-gets-captured1-e1440869103328.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 13 */
+.parallax13{
+  background-image: url('https://fantasytopics.com/wp-content/uploads/2022/02/Jirayas-death-1.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 14 */
+.parallax14{
+  background-image: url('https://wallpaperaccess.com/full/664642.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 15 */
+.parallax15{
+  background-image: url('https://qph.cf2.quoracdn.net/main-qimg-3d7490b55c336fbc051e9a4c6c47c61a-lq ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*16  */
+.parallax16{
+  background-image: url(' https://image.tmdb.org/t/p/original/dZyOizROq6WZ9dP0y5vTCyI6Ht1.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 17 */
+.parallax17{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxNGCN4vlNgBFRJpsPzEPXxmZY31rd32A4Q&usqp=CAU  (18) ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 18 */
+.parallax18{
+  background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/Naruto-saving-sakura-in-a-canyon.jpg?q=50&fit=crop&w=750&dpr=1.5');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 19 */
+.parallax19{
+  background-image: url('https://i.pinimg.com/originals/41/ae/0f/41ae0fd2c26cd6c11681ec7e0a472aae.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 20 */
+.parallax20{
+  background-image: url('https://qph.cf2.quoracdn.net/main-qimg-8d30b1ef9aabc6eee1ac3042cf714bfa-lq ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 21*/
+.parallax21{
+  background-image: url('https://qph.cf2.quoracdn.net/main-qimg-b59829dab9a38ce23ea19cd0232ec3ee-lq ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 22 */
+.parallax22{
+  background-image: url('https://qph.cf2.quoracdn.net/main-qimg-389aa8b2464ccfb87d3d9a66166578f1-lq');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 23 */
+.parallax20{
+  background-image: url('https://pbs.twimg.com/media/DjcO3BzXoAAcM8m.jpg:large');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 24*/
+.parallax24{
+  background-image: url('https://preview.redd.it/ybf7h4oiv0051.jpg?auto=webp&s=dec23497607ef069f23e1be8101e92995332f5f4 ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 25 */
+.parallax25{
+  background-image: url('https://otakukart.com/wp-content/uploads/2021/10/What-Episode-Does-Orochimaru-Revive-The-Hokages-The-Four-Hokages.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 26*/
+.parallax26{
+  background-image: url('https://wallpapercave.com/wp/wp6485961.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 27 */
+.parallax27{
+  background-image: url('https://fictionhorizon.com/wp-content/uploads/2022/07/HvN.jpg ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 28 */
+.parallax28{
+  background-image: url('https://s2.dmcdn.net/v/SHeMT1UvaVb0VXVTf/x480 ');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* timeline ends */
+
+/* Naruto ends */
+
+/* abot us starts*/
+
+.about{
+  background: url('https://images8.alphacoders.com/605/605599.jpg') no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top:8rem ;
+}
+
+
+.about .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,20rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.about .grid .box{
+  background-color: var(--light-bg);
+  color:white;
+  border-radius: .5rem;
+  text-align: center;
+  backdrop-filter: blur(.4rem);
+  padding: 2rem;
+}
+
+.about .grid .box img{
+  height: 20rem;
+  margin: 1rem;
+}
+
+.about .grid .box p{
+  line-height: 2;
+
+}
+.about h2{
+  text-align: center;
+  color: rgb(50, 50, 49);
+  font-size: 4rem;
+}
+
+#rating{
+  color: #ffc107;
+}
+
+.reviews .grid .box h3{
+  color: aqua;
+}
+
+.reviews .grid .box img{
+  height: 5rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.reviews .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,20rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.reviews .grid .box{
+  background-color: var(--light-bg);
+  color:white;
+  border-radius: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(.4rem);
+  padding: 2rem;
+}
+
+.reviews .grid .box p{
+  line-height: 1;
+  margin: 2px;
+  text-align: justify;
+  
+}
+
+.reviews h4{
+  text-align: center;
+  color: rgb(50, 50, 49);
+  font-size: 4rem;
+}
+
+.aayush .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,20rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.aayush .grid .box{
+  background-color: var(--light-bg);
+  color:white;
+  border-radius: .5rem;
+  text-align: center;
+  backdrop-filter: blur(.4rem);
+  padding: 2rem;
+  margin: 1rem;
+}
+.aayush .grid .box p{
+  line-height: 1.5;
+
+}
+/* about us ends */
+
+/* ONE PIECE STARTS */
+
+.onepiece{
+  background: url(./images/onepiecebg.png) no-repeat;
+  background-size: cover;
+ 
+}
+.onepiecenavbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(.3rem);
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 5rem;
+    border-radius: .5rem;
+    opacity: 1;
+}
+.onepiecenavbar a{
+    padding: 15px 15px 15px 50px;
+    text-decoration: none;
+    color: navajowhite;
+    display: block;
+    transition: .3s;
+    font-size: 2rem;
+    opacity: 1;
+}
+.onepiecenavbar a:hover{
+    color: skyblue;
+}
+.onepiecenavbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3.5rem;
+  margin: 5px;
+  color: black;
+}
+#onepiecenav{
+    transition: margin-left .5s;
+  padding: 16px;
+}
+.onepiecelogo{
+  width: 60px;
+  height: 60px;
+}
+
+/* ONE PIECE ENDS (On-going) */
+.pokemonnavbar{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:black;
+	overflow-x: hidden;
+	transition: .5s;
+	padding-top: 5rem;
+	opacity: .7;
+        }
+        
+        .pokemonnavbar a{
+	padding: 15px 15px 15px 50px;
+	text-decoration: none;
+	color: rgb(97, 96, 96);
+	display: block;
+	transition: .3s;
+	font-size: 2rem;
+	opacity: 1;
+        }
+        .pokemonnavbar a:hover{
+	color: white;
+        }
+        .pokemonnavbar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 3.5rem;
+          margin: 5px;
+          color: white;
+        }
+        #pokemonnav{
+	transition: margin-left 0.5s;
+            padding: 16px;
+        }
+
+/* pokemon sidebar */
+/* POKEMON FIRST DIV START */
+.pokemon_1	{
+	height: 800px;
+	width: 100%;
+	outline: none;
+	border: none;
+	opacity: 1;
+	background-image: url('https://rare-gallery.com/mocahbig/22196-Pikachu-Ash-KetchumCute-duo-of-Ash-and-Pikachu.jpg');
+	background-size: cover;
+	z-index: -9999;
+	padding: 10px;
+	background-repeat: no-repeat;
+}
+.pokemon_1 .pokeball-icon
+{
+	position: relative;
+	margin: 5px;
+	padding: 20px 0px 0px 10px;
+}
+.pokemon_1 .pokeball-icon img
+{
+	position: relative;
+	height: 50px;
+	width: 50px;
+}
+.pokemon_1 .pokemon_starting_links
+{
+	margin: 10% 10% 0% 0%;
+	position: relative;
+	background: none;
+	height: 40%;
+	width: 40%;
+}
+.pokemon_1 .pokemon_starting_links .link_start:first-child
+{
+	border-radius: 30px 30px 0px 0px;
+}
+.pokemon_1 .pokemon_starting_links .link_start:last-child
+{
+	border-radius: 0px 0px 30px 30px;
+}
+.pokemon_1 .pokemon_starting_links .link_start
+{
+	background-color: rgba(41, 161, 194,0.6);
+	text-align: center;
+	width: 50%;
+	outline: none;
+	border: 2px sold black;
+	padding: 10px;
+	transition: 0.7s;
+	margin: 30px auto 30px auto;
+}
+.pokemon_1 .pokemon_starting_links .link_start:hover
+{
+	transform: scale(1.3);
+	transition: 0.7s;
+	filter: brightness(120%);
+	text-decoration: underline;
+}
+.pokemon_1 .pokemon_starting_links .link_start a{
+	text-decoration: none;
+	font-weight:500;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 27px;
+}
+.pokemon_1 .pokemon_starting_links .link_start::first-letter
+{
+	font-size: 35px;
+}
+/* POKEMON FIRST DIV END */
+/* POKEMON SECOND DIV START */
+.pokemon_2
+{
+	height: 800px;
+	width: 100%;
+	position: relative;
+	outline: none;
+	border: none;
+	opacity: 1;
+	background-size: cover;
+	z-index: -9999;
+	padding: 10px;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.pokemon_2 .pickachuwrite
+{
+	position: absolute;
+	margin-top: 20%;
+	width: 100%;
+	z-index: -99;
+	font-size: 310px;
+}
+.pokemon_2 .pikachu_image
+{
+	margin: 0;
+	padding: 0;
+}
+.pokemon_2 .pikachu_image img
+{
+	margin-left: 30%;
+	height: 750px;
+	width: 50%;
+}
+.yellow
+{
+	color: #f5f5f4;
+	background-color: rgb(255, 255, 4);
+}
+.green
+{
+	color: rgb(210, 54, 76);
+	background-color:rgb(30, 153, 153);
+}
+.orange
+{
+	background-color: rgb(247, 170, 26);
+	color: rgb(255, 255, 0);
+}
+.aqua
+{
+	color: rgb(197, 91, 15);
+	background-color: aqua;
+}
+/* POKEMON SECOND DIV END */
+/* POKEDEX START */
+.pokedex
+{
+	height: 800px;
+	width: 100%;
+	background: #c9c8c5;
+}
+.pokedex .pokedex_1
+{
+	width: 100%;
+	height: 50%;
+	margin: 3px;
+	padding: 4px;
+}
+.pokedex .div_imagpokedex
+{
+	float: left;
+	background-color: red;
+	height: 100%;
+	width: 25%;
+}
+.pokedex img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+/* POKEDEX END */
+/* POKEGAMES START */
+.pokegames
+{
+	position: absolute;
+	background-image: linear-gradient(white,coral,white);
+	height: 800px;
+	margin: 10px 3px;
+	width: 100%;
+}
+.pokegames .games
+{
+	width: 100%;
+	height: 33%;
+	outline: none;
+	border: none;
+}
+.pokegames .games .gamesimg
+{
+	float: left;
+	width: 25%;
+	height: 99%;
+	padding: 3px;
+	border-top: 2px solid black;
+}
+.pokegames .games .gamesimg a img
+{
+	height: 100%;
+	width: 100%;
+	margin: 4px 0px;
+	object-fit: contain;
+}
+.pokegames .games .gamedesciption
+{
+	padding-top: 13px;
+	float: left;
+	width: 69%;
+	height: 100%;
+	border-top: 2px solid black;
+}
+.pokegames .games .gamedesciption span
+{
+	line-height: 40px;
+	font-size: 30px;
+}
+/* POKEGAMES END */
+/* POKEMON END */
+
+/* ONE PIECE STARTS */
+
+.onepiece{
+  background-image: url('./images/onepiecebg.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.onepiecenavbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(.3rem);
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 5rem;
+    border-radius: .5rem;
+    opacity: 1;
+}
+.onepiecenavbar a{
+    padding: 15px 15px 15px 50px;
+    text-decoration: none;
+    color: navajowhite;
+    display: block;
+    transition: .3s;
+    font-size: 2rem;
+    opacity: 1;
+}
+.onepiecenavbar a:hover{
+    color: skyblue;
+}
+.onepiecenavbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3.5rem;
+  margin: 5px;
+  color: black;
+}
+#onepiecenav{
+    transition: margin-left .5s;
+  padding: 16px;
+}
+.onepiecelogo{
+  width: 60px;
+  height: 60px;
+}
+
+.crewmates .heading{
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.crewmates .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,20rem);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  
+}
+
+.crewmates .grid .box{
+  background-color: var(--light-bg);
+  padding: 2rem;
+  backdrop-filter: blur(.1rem);
+  border-radius: .5rem;
+  position: relative;
+}
+
+.crewmates .grid .box .price{
+  position: absolute;
+  top: 2.5rem; left: 2.5rem;
+  border-radius: .5rem;
+  background-color: var(--light-black);
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+}
+
+.crewmates .grid .box .price i{
+  color: #ffc107;
+  margin-right: .5rem;
+}
+
+.crewmates .grid .box .price span{
+  color: white;
+}
+
+.crewmates .grid .box .image{
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.crewmates .grid .box .name {
+
+  color: white;
+  font-size: 1.5rem;
+}
+
+.crewmates .grid .box .address {
+
+  color: var(--light-white);
+  font-size: 1rem;
+}
+
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #0f3f7e;
+  border: 4px solid navy ;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding:  20px;
+  background-color: var(--light-bg);
+  backdrop-filter: blur(.4rem);
+  position: relative;
+  border-radius: 6px;
+
+}
+.content img{
+  width:480px;
+  height: 200px;
+}
+.timeline .content h3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-black);
+  backdrop-filter: blur(.1rem);
+    transition: .2s linear;
+    opacity: 0;
+    font-size: 2rem;
+    color: orangered;
+}
+
+.timeline .content:hover h3{
+  opacity: 1;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container1 {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container1::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
